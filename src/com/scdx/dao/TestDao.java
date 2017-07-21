@@ -4,7 +4,7 @@ public class TestDao {
 
 	public static void main(String[] args) {
 		UserDao ud=new UserDao();
-		ud.register("44444", "44444");
+		ud.query("11111");
 
 	}
 

@@ -37,5 +37,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
        </table>
         <input type="submit" value="注册" >
     </form>
+    
+    <a href="seacher.html">查询用户</a>
   </body>
 </html>
