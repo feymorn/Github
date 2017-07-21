@@ -41,8 +41,15 @@ public class Register extends HttpServlet {
       System.out.println("已接收到前台表单数据_用户名:"+username);
       System.out.println("已接收到前台表单数据_用户名:"+password);
       UserDao userDao=new UserDao();
+      System.out.println("创建UserDao实例成功"+userDao);
+      String ok;
+      ok=userDao.register(username,password);
+      if(ok.equals("success")){
+    	  
+    	  response.sendRedirect("success.html");
+    	  
+      }
       
-      userDao.register(username,password);
 
 		
 	}
